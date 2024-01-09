@@ -12,10 +12,10 @@ body::-webkit-scrollbar {
     width: 0.5rem;
 }
 body::-webkit-scrollbar-track {
-    background: rgb(210, 222, 235);
+    background: rgb(241, 245, 249);
 }
 body::-webkit-scrollbar-thumb {
-    background: rgb(63, 89, 154);
+    background: rgb(49, 69, 120);
 }
 .main {
     display: flex;
@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
+    z-index: 30;
     max-width: 100%;
 }
 .lead-overlay {
@@ -137,6 +137,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     background-color: rgb(63, 89, 154);
     transition: 200ms ease;
+    z-index: 20;
 }
 .navbar-nav {
     list-style: none;
@@ -188,52 +189,7 @@ body::-webkit-scrollbar-thumb {
 .nav-icon {
     max-width: 2rem;
 }
-@media only screen and (max-width: 600px) {
-    .navbar {
-        bottom: 0;
-        width: 100vw;
-        height: 4rem;
-    }
-    .nav-link:hover {
-        height: 4rem;
-    }
-    .logo {
-        display: none;
-    }
-    .navbar-nav {
-        flex-direction: row;
-    }
-    .nav-link {
-        justify-content: center;
-        height: 4rem;
-    }
-    .main {
-        margin: 0;
-        margin-bottom: 4rem;
-    }
-    .nav-icon {
-        margin-left: 0;
-    }
-}
-@media only screen and (min-width: 600px) {
-    .navbar {
-        top: 0;
-        width: 4rem;
-        height: 100vh;
-    }
-    .navbar:hover {
-        width: 18rem;
-    }
-    .navbar:hover .link-text {
-        display: block;
-    }
-    .nav-icon {
-        margin-left: 1rem;
-    }
-    .nav-link {
-        height: 5rem;
-    }
-}
+
 
   #about {
     width: 100vw;
@@ -242,12 +198,150 @@ body::-webkit-scrollbar-thumb {
     max-width: 100%;
   }
 
+/*
+    Portfolio
+*/
+#portfolio {
+    height: 30vh;
+    background-color: rgb(210, 222, 235);
+}
+
+/*
+    Contact
+*/
+#contact {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contact-info {
+    font-size: 1.1rem;
+    margin: 2.5vh;
+    padding: 2.5vh;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(63, 89, 154);
+    border-radius: 10px;
+    
+}
+.ci-title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-top: -2vh;
+}
+.ci-info {
+    margin-top: 2vh;
+}
+.ci-info-item {
+    display: flex;
+    align-items: center;
+}
+.ci-media {
+    margin-top: 2vh;
+}
+.ci-media p {
+    font-weight: bold;
+}
+.ci-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.ci-icon:hover {
+    transform: scale(1.15);
+}
+.ci-icon-static {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.contact-form {
+    position: relative;
+    background-color: rgb(63, 89, 154);
+    height: 56vh;
+}
+.circle {
+    border-radius: 50%;
+    background: linear-gradient(135deg, transparent 50%, rgb(49, 69, 120));
+    position: absolute;
+}
+.circle.one {
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    right: 10px;
+}
+.circle.two {
+    width: 70px;
+    height: 70px;
+    top: 20px;
+    right: 40px;
+}
+form {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-title {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+    margin-top: -2vh;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.input {
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: rgb(255, 255, 255);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+.input:focus {
+    background-color: rgb(49, 69, 120);
+}
+textarea.input {
+    padding: 0.8rem 1.2rem;
+    height: 12.5vh;
+    border-radius: 10px;
+    resize: none;
+    overflow-y: auto;
+}
+.form-btn {
+    padding: 0.6rem 1.3rem;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 0.95rem;
+    color: rgb(35, 49, 86);;
+    line-height: 0.5;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+}
+.form-btn:hover {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
 
 
-
-  /*
+/*
     Footer
-  */
+*/
 #footer {
     display: flex;
     flex-direction: column;
@@ -258,6 +352,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 100%;
     color: rgb(255, 255, 255);
     background: rgb(35, 49, 86);
+    z-index: 10;
 }
 #scroll-up {
     margin-top: 20px;
@@ -291,4 +386,82 @@ body::-webkit-scrollbar-thumb {
     0%   { transform:translate(0,2.5px) rotate(225deg); opacity: 0;  }
     50%  { opacity: 1;  }
     100% { transform:translate(0,-2.5px) rotate(225deg); opacity: 0; }
+}
+
+/*
+    Responsivity
+*/
+@media only screen and (max-width: 650px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 4rem;
+    }
+    .nav-link:hover {
+        height: 4rem;
+    }
+    .logo {
+        display: none;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-link {
+        justify-content: center;
+        height: 4rem;
+    }
+    .main {
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+    .nav-icon {
+        margin-left: 0;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    .contact-info {
+        max-width: 100%;
+        width: 85vw;
+    }
+    .contact-form {
+        max-width: 100%;
+        width: 100vw;
+    }
+    .input {
+        width: 82vw;
+    }
+}
+@media only screen and (min-width: 650px) {
+    .navbar {
+        top: 0;
+        width: 4rem;
+        height: 100vh;
+    }
+    .navbar:hover {
+        width: 18rem;
+    }
+    .navbar:hover .link-text {
+        display: block;
+    }
+    .nav-icon {
+        margin-left: 1rem;
+    }
+    .nav-link {
+        height: 5rem;
+    }
+    #contact {
+        flex-direction: row;
+    }
+    .contact-info {
+        max-width: 40%;
+        width: 40vw;
+    }
+    .contact-form {
+        max-width: 60%;
+        width: 60vw;
+    }
+    .input {
+        width: 30vw;
+    }
 }
