@@ -26,7 +26,7 @@
                 <span class="blinking-cursor">_</span>
                 
             </div>
-            <a class="btn-resume" href="" download="">Download Resume</a>
+            <a class="btn-resume" href="doc/MapaCurricularPeriodos.pdf" download="doc/MapaCurricularPeriodos.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
             <div id="scroll-down"></div>
         </div>
     </div>
@@ -75,7 +75,17 @@
 
     <div class="main">
         <div id="about">
-            <h1>About</h1>
+            <div class="a-title">
+                <p>About Me</p>
+            </div>
+            <p class="a-content">
+                I am pursuing a B.S. in Computer Science and Technology at Tecnológico de Monterrey. I have strong academic 
+                achievement as well as competency in diverse platforms and tools such as Python, C++, C#, SQL, Docker, React, Android Studio
+                and .NET, besides agile methodologies.
+                <br><br>
+                I am keen to build a career in web and mobile development by putting into practice my current skills, 
+                but also being open to new knowledge in order to overcome any challenge.
+            </p>
         </div>
         <div id="skills">
             <h1>skills</h1>
@@ -85,6 +95,34 @@
         </div>
         <div id="portfolio">
             <h1>portfolio</h1>
+            <div class="p-items-container">
+                <ul class="p-items">
+                    <li onclick ="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="p-item">
+                            <img src="img/thumbnails/arca.png" />
+                            <div class="p-icons">
+                                <a href="vid/arca/ARCA_Admin.mp4" data-fancybox="images-preview-1" data-thumbs='{"autoStart":true}' 
+                                title="View Video" class="open-button" data-fancybox="gallery" data-caption="My work with Inercy Inc. I worked as a Front-end Web Developer.">
+                                    <i class="fa fa-search"></i>
+                                <a href="" target="_blank" title="Link" class="project-link">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                        
+                            </div>
+
+                            <div style="display: none;">
+
+                            <a href="vid/arca/ARCA_User.mp4" data-fancybox="images-preview-1" 
+                             data-caption="Applicant filling out the form to apply." ></a>
+                          
+                            </div>
+
+                            <div class="image-overlay"></div>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div id="contact">
             <div class="contact-info">
@@ -114,13 +152,17 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
 
-                <form action="index.html" autocomplete="off">
+                <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
                     <p class="form-title">Contact me</p>
+                    <input type="hidden" name="access_key" value="c21e93b8-7ae2-4e60-9899-c0dc2bb52d7c">
                     <div class="input-container">
-                      <input type="email" name="email" class="input" placeholder="Email"/>
+                        <input type="text" name="name" class="input" placeholder="Name" required/>
+                      </div>
+                    <div class="input-container">
+                      <input type="email" name="email" class="input" placeholder="Email" required/>
                     </div>
                     <div class="input-container textarea">
-                      <textarea name="message" class="input" placeholder="Message"></textarea>
+                      <textarea name="message" class="input" placeholder="Message" required></textarea>
                     </div>
                     <input type="submit" value="Send" class="form-btn" />
                 </form>
@@ -135,5 +177,6 @@
 
     <script src="js/subTitleAnimation.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>
