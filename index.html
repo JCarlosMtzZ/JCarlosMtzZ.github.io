@@ -95,34 +95,37 @@
         </div>
         <div id="portfolio">
             <h1>portfolio</h1>
-            <div class="p-items-container">
-                <ul class="p-items">
-                    <li onclick ="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="p-item">
-                            <img src="img/thumbnails/arca.png" />
-                            <div class="p-icons">
-                                <a href="vid/arca/ARCA_Admin.mp4" data-fancybox="images-preview-1" data-thumbs='{"autoStart":true}' 
-                                title="View Video" class="open-button" data-fancybox="gallery" data-caption="My work with Inercy Inc. I worked as a Front-end Web Developer.">
-                                    <i class="fa fa-search"></i>
-                                <a href="" target="_blank" title="Link" class="project-link">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                        
-                            </div>
-
-                            <div style="display: none;">
-
-                            <a href="vid/arca/ARCA_User.mp4" data-fancybox="images-preview-1" 
-                             data-caption="Applicant filling out the form to apply." ></a>
-                          
-                            </div>
-
-                            <div class="image-overlay"></div>
-                            
-                        </div>
-                    </li>
-                </ul>
+            <div class="p-container">
+                <div class="p-item"><img id="arca" src="img/thumbnails/arca.png" /></div>
+                <div class="p-item"><img id="box-collector" src="img/thumbnails/box-collector.png"></div>
             </div>
+            <div class="popup-item">
+                <span>&times;</span>
+                <div id ="arca-popup" class="p-content">
+                    <div class="view">
+                        <video class="view-item" src="vid/arca/ARCA_Admin.mp4" muted autoplay controls></video>
+                    </div>
+                    <div class="selectors">
+                        <div class="selector">
+                            <video onclick="launch(this)" class="selector-icon" src="vid/arca/ARCA_Admin.mp4" muted></video>
+                        </div>
+                        <div class="selector">
+                            <video onclick="launch(this)" class="selector-icon" src="vid/arca/ARCA_User.mp4" muted></video>
+                        </div>
+                    </div>
+                </div>
+                <div id="box-collector-popup" class="p-content">
+                    <div class="view">
+                        <video class="view-item" src="vid/box-collector/demo_trim.mp4" muted autoplay controls></video>
+                    </div>
+                    <div class="selectors">
+                        
+                    </div>
+                </div>
+                <!--<video src="vid/arca/ARCA_Admin.mp4" muted autoplay controls></video>
+                -->
+            </div>
+            
         </div>
         <div id="contact">
             <div class="contact-info">
