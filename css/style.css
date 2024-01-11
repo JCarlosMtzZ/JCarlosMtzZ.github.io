@@ -8,9 +8,6 @@ body {
     flex-direction: column;
     font-family: 'Lato';
 }
-body.locked {
-    overflow: hidden;
-}
 body::-webkit-scrollbar {
     width: 0.5rem;
 }
@@ -230,8 +227,20 @@ body::-webkit-scrollbar-thumb {
     Portfolio
 */
 #portfolio {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(210, 222, 235);
+}
+.p-title {
+    font-size: 2rem;
+    margin: 0;
+}
+.p-title p {
+    color: rgb(0, 0, 0);
+    padding: 7.5px;
+    margin: 3vh;
+    border-bottom: 1px solid rgb(63, 89, 154);
 }
 .p-container {
     display: flex;
@@ -239,10 +248,11 @@ body::-webkit-scrollbar-thumb {
     gap: 15px;
     justify-content: center;
     padding: 10px;
+    margin-bottom: 5vh;
 }
 .p-item {
-    height: 150px;
-    width: 250px;
+    height: 100px;
+    width: 150px;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
@@ -270,6 +280,7 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     width: 100vw;
     display: none;
+    animation: show 0.5s ease-out;
 }
 @keyframes show {
     0% {
@@ -287,15 +298,20 @@ body::-webkit-scrollbar-thumb {
         opacity: 0;
     }
 }
+.popup-item .view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 200px);
+    height: 100vh;
+}
 .popup-item .view-item {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-25%, -50%);
+    position: relative;
     width: fit-content;
     height: fit-content;
-    max-width: 60vw;
-    max-height: 70vh;
+    max-width: 95%;
+    max-height: 80vh;
     border-radius: 0;
     border: 2px solid rgb(255, 255, 255);
     object-fit: cover;
@@ -303,53 +319,62 @@ body::-webkit-scrollbar-thumb {
 }
 .popup-item span {
     position: absolute;
-    top: 10px;
-    right: 22.5vw;
+    top: 5px;
+    right: 210px;
     font-size: 40px;
     color: rgb(255, 255, 255);
     z-index: 100;
     cursor: pointer;
     transition: 0.2s linear;
 }
+
+
 .popup-item span:hover {
     transform: scale(1.1);
 
 }
-.selectors {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.popup-item .sidebar {
+    height: 100vh;
+    background: rgb(210, 222, 235);
     position: absolute;
     top: 0;
     left: 100%;
     transform: translate(-100%, 0);
-    width: 20vw;
-    height: 100vh;
-    background: rgb(210, 222, 235);
-    object-fit: cover;
+    width: 200px;
+}
+.selectors {
+    margin: 0;
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    height: fit-content;
 }
 .selector {
-    margin: 3px;
-    height: 8vh;
-    width: 7vw;
-    border: 2px solid rgb(255, 255, 255);
+    height: 68px;
+    width: 88px;
+    border: 2px solid rgb(63, 89, 154);
     border-radius: 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
     cursor: pointer;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+}
+.selector:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 .selector-icon {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: 0.2s linear;
-
+    transition: 0.2s ;
 }
 .selector-icon:hover {
     transform: scale(1.1);
 }
+
 
 
 /*
@@ -541,7 +566,7 @@ textarea.input {
 /*
     Responsivity
 */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
     .navbar {
         bottom: 0;
         width: 100vw;
@@ -591,7 +616,7 @@ textarea.input {
         width: 82vw;
     }
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 700px) {
     .navbar {
         top: 0;
         width: 4rem;

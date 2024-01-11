@@ -6,33 +6,31 @@ document.querySelectorAll('.p-container img').forEach(i => {
         let popup = document.querySelector('.popup-item');
         popup.style.animation = 'show 0.5s ease-out';
         popup.style.display = 'block';
-
-        id = i.getAttribute('id').toString() + '-popup';
-        document.getElementById(id).style.display = 'block';
+        id = i.getAttribute('id').toString();
+        document.getElementById(id + '-popup').style.display = 'block';
 
         
-        body.classList.toggle('locked');
+        //body.classList.toggle('locked');
         //document.querySelector('.popup-item video').src = i.getAttribute('src');
     }
 });
 document.querySelector('.popup-item span').onclick = () => {
     let popup = document.querySelector('.popup-item');
-    popup.style.animation = 'hide 0.5s ease-out';
+    popup.style.animation = 'hide 0.4s ease-out';
     setTimeout(() => {
         popup.style.display = 'none';
-    }, 500);
+    }, 400);
     
-    document.getElementById(id).style.display = 'none';
+    document.getElementById(id + '-popup').style.display = 'none';
 
-    if (body.classList.contains('locked')) {
-        body.style.overflow = 'auto';
-    }
+    //if (body.classList.contains('locked')) {
+    //    body.style.overflow = 'auto';
+    //}
 };
 
 function launch(T) {
-    console.log(T)
-    let path = T.src;
-    let view = document.querySelector(".view-item");
+    let path = T.src.replace("/s90-Ic42/","/s590-Ic42/");
+    let view = document.getElementById(id + "-view-item");
     view.style.opacity = 0;
 
     setTimeout(function() {

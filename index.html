@@ -94,36 +94,149 @@
             <h1>timeline</h1>
         </div>
         <div id="portfolio">
-            <h1>portfolio</h1>
+            <div class="p-title">
+                <p>Projects</p>
+            </div>
             <div class="p-container">
                 <div class="p-item"><img id="arca" src="img/thumbnails/arca.png" /></div>
-                <div class="p-item"><img id="box-collector" src="img/thumbnails/box-collector.png"></div>
+                <div class="p-item"><img id="syntax-highlighter" src="img/thumbnails/syntax-highlighter.png"/></div>
+                <div class="p-item"><img id="lsm" src="img/thumbnails/lsm.png"/></div>
+                <div class="p-item"><img id="box-collector" src="img/thumbnails/box-collector.png" /></div>
+                <div class="p-item"><img id="loopedia" src="img/thumbnails/loopedia.jpg" /></div>
             </div>
             <div class="popup-item">
                 <span>&times;</span>
                 <div id ="arca-popup" class="p-content">
                     <div class="view">
-                        <video class="view-item" src="vid/arca/ARCA_Admin.mp4" muted autoplay controls></video>
+                        <video id="arca-view-item" class="view-item" src="vid/arca/ARCA_Admin.mp4" muted autoplay controls></video>
                     </div>
-                    <div class="selectors">
-                        <div class="selector">
-                            <video onclick="launch(this)" class="selector-icon" src="vid/arca/ARCA_Admin.mp4" muted></video>
+                    <div class="sidebar">
+                        <div class="selectors">
+                            <div class="selector">
+                                <video onclick="launch(this)" class="selector-icon" src="vid/arca/ARCA_Admin.mp4" muted></video>
+                            </div>
+                            <div class="selector">
+                                <video onclick="launch(this)" class="selector-icon" src="vid/arca/ARCA_User.mp4" muted></video>
+                            </div>
                         </div>
-                        <div class="selector">
-                            <video onclick="launch(this)" class="selector-icon" src="vid/arca/ARCA_User.mp4" muted></video>
+                        <div class="text">
+                            Caption
+                        </div>
+                    </div>
+                </div>
+                <div id ="syntax-highlighter-popup" class="p-content">
+                    <div class="view">
+                        <img id="syntax-highlighter-view-item" class="view-item" src="img/projects/syntax-highlighter/1.png"/>
+                    </div>
+                    <div class="sidebar">
+                        <div class="selectors">
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/syntax-highlighter/1.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/syntax-highlighter/2.png"/>
+                            </div>
+                        </div>
+                        <div class="text">
+                            Caption
+                        </div>
+                    </div>
+                </div>
+                <div id ="lsm-popup" class="p-content">
+                    <div class="view">
+                        <img id="lsm-view-item" class="view-item" src="img/projects/lsm/1.png"/>
+                    </div>
+                    <div class="sidebar">
+                        <div class="selectors">
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/1.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/2.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/3.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/4.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/5.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/6.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/7.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/8.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/9.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/10.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/11.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/12.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/13.png"/>
+                            </div>
+                        </div>
+                        <div class="text">
+                            Caption
                         </div>
                     </div>
                 </div>
                 <div id="box-collector-popup" class="p-content">
                     <div class="view">
-                        <video class="view-item" src="vid/box-collector/demo_trim.mp4" muted autoplay controls></video>
+                        <video id="box-collector-view-item" class="view-item" src="vid/box-collector/demo_trim.mp4" muted autoplay controls></video>
                     </div>
-                    <div class="selectors">
-                        
+                    <div class="sidebar">
+                        <div class="text">
+                            Caption
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id ="loopedia-popup" class="p-content">
+                    <div class="view">
+                        <img id="loopedia-view-item" class="view-item" src="img/projects/loopedia/1.jpg"/>
+                    </div>
+                    <div class="sidebar">
+                        <div class="selectors">
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/1.jpg"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/2.jpg"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/3.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/4.png"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/5.jpg"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/6.jpg"/>
+                            </div>
+                            <div class="selector">
+                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/7.png"/>
+                            </div>
+                        </div>
+                        <div class="text">
+                            Caption
+                        </div>
                     </div>
                 </div>
-                <!--<video src="vid/arca/ARCA_Admin.mp4" muted autoplay controls></video>
-                -->
             </div>
             
         </div>
