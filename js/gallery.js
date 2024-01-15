@@ -9,20 +9,23 @@ document.querySelectorAll('.p-container img').forEach(i => {
         id = i.getAttribute('id').toString();
         document.getElementById(id + '-popup').style.display = 'block';
 
+        body.style.overflow = 'hidden';
         
         //body.classList.toggle('locked');
         //document.querySelector('.popup-item video').src = i.getAttribute('src');
     }
 });
 document.querySelector('.popup-item span').onclick = () => {
+    document.getElementById(id + '-popup').style.display = 'none';
     let popup = document.querySelector('.popup-item');
     popup.style.animation = 'hide 0.4s ease-out';
     setTimeout(() => {
         popup.style.display = 'none';
     }, 400);
     
-    document.getElementById(id + '-popup').style.display = 'none';
+    
 
+    body.style.overflow = 'auto'
     //if (body.classList.contains('locked')) {
     //    body.style.overflow = 'auto';
     //}

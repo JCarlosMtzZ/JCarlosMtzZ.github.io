@@ -130,6 +130,20 @@ body::-webkit-scrollbar-thumb {
     100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
 
+.section-title {
+    font-size: 2.25rem;
+    margin: 0;
+    padding: 30px;
+}
+.section-title p {
+    color: rgb(50, 50, 50);
+    padding: 7.5px;
+    border-bottom: 1px solid rgb(63, 89, 154);
+    margin: 0;
+    text-align: center;
+}
+
+
 /*
     Navbar
 */
@@ -196,32 +210,84 @@ body::-webkit-scrollbar-thumb {
 #about {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     max-width: 100%;
     width: 100vw;
     background-color: rgb(255, 255, 255);
-    max-width: 100%;
-}
-.a-title {
-    font-size: 2rem;
-    margin-bottom: 0;
-}
-.a-title p {
-    color: rgb(50, 50, 50);
-    padding: 7.5px;
-    border-bottom: 1px solid rgb(63, 89, 154);
 }
 .a-content {
     color: rgb(76, 76, 76);
     font-size: 1rem;
-    padding: 5vh;
+    padding: 7vh;
+    padding-left: 4vh;
+    text-align: justify;
+    margin: 0;
+}
+
+/*
+    Skills
+*/
+#skills {
+    background-color: rgb(210, 222, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100vw;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2vh;
+    gap: 10px;
+}
+.skill-type {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skill-icon {
+    height: 75px;
+    width: 75px;
+}
+.skill-type-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: (50, 50, 50);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.skill-type-content {
+    color: rgb(76, 76, 76);
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+.ss-list {
+    color: rgb(76, 76, 76);
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: justify;
 }
 
-
-#skills {
-    background-color: rgb(210, 222, 235);
+/*
+    Timeline
+*/
+#timeline {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100vw;
 }
+
 
 /*
     Portfolio
@@ -232,27 +298,17 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     background-color: rgb(210, 222, 235);
 }
-.p-title {
-    font-size: 2rem;
-    margin: 0;
-}
-.p-title p {
-    color: rgb(0, 0, 0);
-    padding: 7.5px;
-    margin: 3vh;
-    border-bottom: 1px solid rgb(63, 89, 154);
-}
 .p-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 17.5px;
     justify-content: center;
     padding: 10px;
-    margin-bottom: 5vh;
+    margin-bottom: 7.5vh;
 }
 .p-item {
-    height: 100px;
-    width: 150px;
+    height: 150px;
+    width: 200px;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
@@ -280,7 +336,6 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     width: 100vw;
     display: none;
-    animation: show 0.5s ease-out;
 }
 @keyframes show {
     0% {
@@ -345,10 +400,12 @@ body::-webkit-scrollbar-thumb {
 .selectors {
     margin: 0;
     padding: 2px;
+    padding-top: 4px;
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
     height: fit-content;
+    justify-content: center;
 }
 .selector {
     height: 68px;
@@ -595,8 +652,11 @@ textarea.input {
     #about {
         flex-direction: column;
     }
-    .a-title {
+    #about .section-title {
         margin-bottom: -5vh;
+    }
+    .skill-type {
+        width: 80vw;
     }
     .popup-item video {
         width: 95%;
@@ -637,17 +697,12 @@ textarea.input {
     #about {
         flex-direction: row;
     }
-    .a-title {
-        display: flex;
-        justify-content: center;
-        width: 36vw;
-        margin: 0;
-    }
-    .a-title p {
-        margin-left: 30px;
-    }
+
     .a-content {
         width: 64vw;
+    }
+    .skill-type {
+        width: 35vw;
     }
     #contact {
         flex-direction: row;
