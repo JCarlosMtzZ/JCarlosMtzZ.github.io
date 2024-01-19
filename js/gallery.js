@@ -10,9 +10,6 @@ document.querySelectorAll('.p-container img').forEach(i => {
         document.getElementById(id + '-popup').style.display = 'block';
 
         body.style.overflow = 'hidden';
-        
-        //body.classList.toggle('locked');
-        //document.querySelector('.popup-item video').src = i.getAttribute('src');
     }
 });
 document.querySelector('.popup-item span').onclick = () => {
@@ -22,13 +19,8 @@ document.querySelector('.popup-item span').onclick = () => {
     setTimeout(() => {
         popup.style.display = 'none';
     }, 400);
-    
-    
 
     body.style.overflow = 'auto'
-    //if (body.classList.contains('locked')) {
-    //    body.style.overflow = 'auto';
-    //}
 };
 
 function launch(T) {
@@ -39,7 +31,6 @@ function launch(T) {
     setTimeout(function() {
         view.src = path;
         view.style.opacity = 1;
-    }, 250);
-    
+    }, 250);   
 }
-    
+
