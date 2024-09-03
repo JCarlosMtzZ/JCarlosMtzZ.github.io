@@ -18,7 +18,7 @@ document.querySelector('.popup-item span').onclick = () => {
     popup.style.animation = 'hide 0.4s ease-out';
     setTimeout(() => {
         popup.style.display = 'none';
-    }, 400);
+    }, 380);
 
     body.style.overflow = 'auto'
 };

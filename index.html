@@ -29,7 +29,7 @@
                 <span class="blinking-cursor">_</span>
                 
             </div>
-            <a class="btn-resume" href="doc/JuanCarlosMartínezENG.pdf" download="JuanCarlosMartínez.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+            <a class="btn-resume" href="doc/JuanCarlosMartínezEng.pdf" download="JuanCarlosMartínez.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
             <div id="scroll-down"></div>
         </div>
     </div>
@@ -200,6 +200,7 @@
                 <p>Projects</p>
             </div>
             <div class="p-container">
+                <div class="p-item"><img id="inventa" src="img/thumbnails/inventa.png" /></div>
                 <div class="p-item"><img id="visianario" src="img/thumbnails/visianario.png" /></div>
                 <div class="p-item"><img id="bakesaleapp" src="img/thumbnails/bakesaleapp.png" /></div>
                 <div class="p-item"><img id="sumgame" src="img/thumbnails/sumgame.png" /></div>
@@ -211,6 +212,27 @@
             </div>
             <div class="popup-item">
                 <span>&times;</span>
+                <div id ="inventa-popup" class="p-content">
+                    <a href="https://github.com/JCarlosMtzZ/InVenta-WebApp" target="_blank" rel="noopener noreferrer">
+                        <img src="img/icon/github-white.png" class="p-icon" alt="">
+                    </a>
+                    <div class="view">
+                        <video id="inventa-view-item" class="view-item" src="vid/inventa1.mp4" muted autoplay controls></video>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar-title">
+                            InVenta
+                        </div>
+                        <div class="selectors">
+                            <div class="selector">
+                                <video onclick="launch(this)" class="selector-icon" src="vid/inventa1.mp4" muted></video>
+                            </div>
+                            <div class="selector">
+                                <video onclick="launch(this)" class="selector-icon" src="vid/inventa2.mp4" muted></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id ="visianario-popup" class="p-content">
                     <a href="https://github.com/JCarlosMtzZ/YOLO_API" target="_blank" rel="noopener noreferrer">
                         <img src="img/icon/github-white.png" class="p-icon" alt="">
@@ -459,7 +481,7 @@
         </div>
 
         <div id="footer">
-            <p>Copyright &copy Juan Carlos Martínez. All Rights Reserved</p>
+            <p>Copyright &copy Juan Carlos Martínez</p>
             <div id="scroll-up"></div>
         </div>
     </div>
