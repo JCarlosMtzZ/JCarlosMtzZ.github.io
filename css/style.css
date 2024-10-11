@@ -274,7 +274,7 @@ body::-webkit-scrollbar-thumb {
     Skills
 */
 #skills {
-    background-color: rgb(210, 222, 235);
+    background-color: #e9eff5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -495,20 +495,20 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(210, 222, 235);
+    background-color: #e9eff5;
 }
 .p-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 17.5px;
+    gap: 16px;
     justify-content: center;
     padding: 10px;
     margin-bottom: 7.5vh;
 }
 .p-item {
-    height: 150px;
-    width: 200px;
-    border: 3px solid rgb(255, 255, 255);
+    height: 140px;
+    width: 190px;
+    border: 1.75px solid rgb(255, 255, 255);
     border-radius: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
     cursor: pointer;
@@ -565,10 +565,10 @@ body::-webkit-scrollbar-thumb {
     width: fit-content;
     height: fit-content;
     max-width: 90%;
-    max-height: 80vh;
+    max-height: 80%;
     border-radius: 0;
-    border: 2px solid rgb(255, 255, 255);
-    object-fit: cover;
+    border: 1.75px solid rgb(255, 255, 255);
+    object-fit: contain;
     transition: opacity 0.25s ease-in-out;
 }
 .popup-item span {
@@ -597,11 +597,10 @@ body::-webkit-scrollbar-thumb {
 }
 .popup-item .sidebar {
     height: 100vh;
-    background: rgb(210, 222, 235);
+    background: #e9eff5;
     position: absolute;
-    top: 0;
-    left: 100%;
-    transform: translate(-100%, 0);
+    bottom: 0;
+    right: 0;
     width: 200px;
 }
 .sidebar-title {
@@ -613,6 +612,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
 }
 .selectors {
+    width: 100%;
     margin: 0;
     padding: 2px;
     padding-top: 4px;
@@ -620,6 +620,7 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
     gap: 4px;
     justify-content: center;
+    align-items: center;
 }
 .selector {
     height: 68px;
@@ -928,6 +929,25 @@ textarea.input {
     }
     .input {
         width: 82vw;
+    }
+    .popup-item span {
+        right: 10px;
+    }
+    .p-icon {
+        right: 50px;
+    }
+    .popup-item .view {
+        width: 100%;
+        height: 60vh;
+    }
+    .popup-item .sidebar {
+        width: 100%;
+        height: 40vh;
+        overflow: auto;
+        padding-bottom: 20px;
+    }
+    .selectors {
+        gap: 8px;
     }
 }
 @media only screen and (min-width: 700px) {
