@@ -2,530 +2,620 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Carlos' Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <title>Carlos' Portfolio</title>
 
-    <link href="img/icon/briefcase.png" rel="icon">
-    <link rel="stylesheet" href="css/style.css">
-    
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+
+  <link href="img/icon/briefcase.png" rel="icon">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <div class="loader"></div>
+  <div class="loader"></div>
 
-    <div id="lead">
-        <img class="lead-bg" id="lead-bg" src="img/background/softwareDev.jpg" alt="" />
-        <div class="lead-overlay"></div>
-        <div class="lead-content">
-            <div class="title">
-                <p>Juan Carlos Martínez</p>
-            </div>
-            <div class="sub-title-animation">
-                <span is="type-async" id="type-text"></span>
-                <span class="blinking-cursor">_</span>
-            </div>
-            <a class="btn-resume" href="doc/Resume.pdf" download="JuanCarlosMartinez.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
-            <div id="scroll-down"></div>
-        </div>
+  <div id="lead">
+    <img class="lead-bg" id="lead-bg" src="img/background/softwareDev.jpg" alt="" />
+    <div class="lead-overlay"></div>
+    <div class="lead-content">
+      <div class="title">
+        <p>Juan Carlos Martínez</p>
+      </div>
+      <div class="sub-title-animation">
+        <span is="type-async" id="type-text"></span>
+        <span class="blinking-cursor">_</span>
+      </div>
+      <a class="btn-resume" href="doc/Resume.pdf" download="JuanCarlosMartinez.pdf" target="_blank"
+        rel="noopener noreferrer">Download Resume</a>
+      <div id="scroll-down"></div>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="#lead" class="nav-link">
+          <span class="link-text">Carlos Martínez</span>
+          <img class="nav-icon" src="img/icon/arrow.png">
+
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#about" class="nav-link">
+          <img class="nav-icon" src="img/icon/about.png">
+          <span class="link-text">About</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#skills" class="nav-link">
+          <img class="nav-icon" src="img/icon/skills.png">
+          <span class="link-text">Skills</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#timeline" class="nav-link">
+          <img class="nav-icon" src="img/icon/timeline.png">
+          <span class="link-text">Timeline</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#portfolio" class="nav-link">
+          <img class="nav-icon" src="img/icon/projects.png">
+          <span class="link-text">Projects</span>
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a href="#contact" class="nav-link">
+          <img class="nav-icon" src="img/icon/contact.png">
+          <span class="link-text">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="main">
+    <div id="about">
+      <div class="section-title">
+        <p>About Me</p>
+      </div>
+      <p class="a-content">
+        B.S. in Computer Science and Technology at Tecnológico de Monterrey. Developer with strong academic
+        achievement as well as competency in diverse platforms and tools such as JavaScript, Python, C++, C#, SQL,
+        React,
+        Node.js, and .NET, besides agile methodologies.
+        <br><br>
+        I am keen to build a career in web and mobile development by putting into practice my current skills,
+        but also being open to new knowledge in order to overcome any challenge.
+      </p>
     </div>
 
-    <nav class="navbar">
-        <ul class="navbar-nav">
-            <li class="logo">
-                <a href="#lead" class="nav-link">
-                    <span class="link-text">Carlos Martínez</span>
-                    <img class="nav-icon" src="img/icon/arrow.png">
-                    
-                </a>
+    <div id="skills">
+      <div class="section-title">
+        <p>Skills</p>
+      </div>
+      <div class="skills-container">
+        <div class="skill-type">
+          <img class="skill-icon" src="img/icon/programming-languages.png" />
+          <p class="skill-type-title">
+            Coding Languages
+          </p>
+          <p class="skill-type-content">
+            JavaScript, Python, C++, C#, SQL, Go, Kotlin, HTML, CSS.
+          </p>
+        </div>
+        <div class="skill-type">
+          <img class="skill-icon" src="img/icon/languages.png" />
+          <p class="skill-type-title">
+            Natural Languages
+          </p>
+          <p class="skill-type-content">
+            Spanish (native), English (upper intermediate).
+          </p>
+        </div>
+        <div class="skill-type">
+          <img class="skill-icon" src="img/icon/technology.png" />
+          <p class="skill-type-title">
+            Technologies
+          </p>
+          <p class="skill-type-content">
+            .Net, Node.js, MySQL, SQL Server, PostgreSQL, React, React Native, Next.js, Tailwind CSS, Bootstrap, AWS,
+            Oracle Cloud, RabbitMQ, Docker, Git/GitHub, SonarQube.
+          </p>
+        </div>
+        <div class="skill-type">
+          <img class="skill-icon" src="img/icon/soft-skills.png" />
+          <p class="skill-type-title">
+            Soft Skills
+          </p>
+          <p class="skill-type-content">
+          <ul class="ss-list">
+            <li>
+              <b>Self-taught:</b> I'm a visual learner who deals with problems directly to enhance learning.
             </li>
-            <li class="navbar-item">
-                <a href="#about" class="nav-link">
-                    <img class="nav-icon" src="img/icon/about.png">
-                    <span class="link-text">About</span>
-                </a>
+            <li>
+              <b>Commitment:</b> I know that the completeness of every task, wether it's an individual or a group one,
+              will lead to success.
             </li>
-            <li class="navbar-item">
-                <a href="#skills" class="nav-link">
-                    <img class="nav-icon" src="img/icon/skills.png">
-                    <span class="link-text">Skills</span>
-                </a>
+            <li>
+              <b>Teamwork:</b> Always willing to callaborate since I can learn from others and viceversa.
             </li>
-            <li class="navbar-item">
-                <a href="#timeline" class="nav-link">
-                    <img class="nav-icon" src="img/icon/timeline.png">
-                    <span class="link-text">Timeline</span>
-                </a>
-            </li>
-            <li class="navbar-item">
-                <a href="#portfolio" class="nav-link">
-                    <img class="nav-icon" src="img/icon/projects.png">
-                    <span class="link-text">Projects</span>
-                </a>
-            </li>
-            <li class="navbar-item">
-                <a href="#contact" class="nav-link">
-                    <img class="nav-icon" src="img/icon/contact.png">
-                    <span class="link-text">Contact</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <div class="main">
-        <div id="about">
-            <div class="section-title">
-                <p>About Me</p>
-            </div>
-            <p class="a-content">
-                B.S. in Computer Science and Technology at Tecnológico de Monterrey. Developer with strong academic 
-                achievement as well as competency in diverse platforms and tools such as JavaScript, Python, C++, C#, SQL, React,
-                Node.js, and .NET, besides agile methodologies.
-                <br><br>
-                I am keen to build a career in web and mobile development by putting into practice my current skills, 
-                but also being open to new knowledge in order to overcome any challenge.
+    <div id="timeline">
+      <div class="section-title">
+        <p>Timeline</p>
+      </div>
+      <div class="t-container">
+        <ul class="t-list">
+          <li class="t-list-item">
+            <p class="t-header">B.S. in Computer Science and Technology</p>
+            <p class="t-subheader">Instituto Tecnológico y de Estudios Superiores de Monterrey</p>
+            <p class="t-content"><b>GPA: </b>3.9/4&nbsp;&nbsp;|&nbsp;&nbsp;99/100.<br><br>
+              <b>Relevant coursework: </b>OOP, Data Structures and Algorithms,
+              Software Requirements, Multi-Agent Systems with Computer Graphics, Software Development, Implementation of
+              Wide Area Networks and Distributed Services.
+              <br><br><b>Key achievements: </b>
+            <ul class="t-achievements">
+              <li>Graduated with Highest Honors (Summa Cum Laude).</li>
+              <li>Líderes del Mañana Scholarship: 100% scholarship for outstanding cognitive, social leadership
+                and performance abilities. Chosen among over 15,000 applicants.</li>
+              <li>Acknowledgement, 2021, 2023, 2024: Awarded for having academic excellence grades.</li>
+            </ul>
             </p>
-        </div>
-
-        <div id="skills">
-            <div class="section-title">
-                <p>Skills</p>
-            </div>
-            <div class="skills-container">
-                <div class="skill-type">
-                    <img class="skill-icon" src="img/icon/programming-languages.png" />
-                    <p class="skill-type-title">
-                        Coding Languages
-                    </p>
-                    <p class="skill-type-content">
-                        JavaScript, Python, C++, C#, SQL, Go, Kotlin, HTML, CSS.
-                    </p>
-                </div>
-                <div class="skill-type">
-                    <img class="skill-icon" src="img/icon/languages.png" />
-                    <p class="skill-type-title">
-                        Natural Languages
-                    </p>
-                    <p class="skill-type-content">
-                        Spanish (native), English (upper intermediate).
-                    </p>
-                </div>
-                <div class="skill-type">
-                    <img class="skill-icon" src="img/icon/technology.png" />
-                    <p class="skill-type-title">
-                        Technologies
-                    </p>
-                    <p class="skill-type-content">
-                        .Net, Node.js, MySQL, SQL Server, PostgreSQL, React, React Native, Next.js, Tailwind CSS, Bootstrap, AWS, Oracle Cloud, RabbitMQ, Docker, Git/GitHub, SonarQube.
-                    </p>
-                </div>
-                <div class="skill-type">
-                    <img class="skill-icon" src="img/icon/soft-skills.png" />
-                    <p class="skill-type-title">
-                        Soft Skills
-                    </p>
-                    <p class="skill-type-content">
-                        <ul class="ss-list">
-                            <li>
-                                <b>Self-taught:</b> I'm a visual learner who deals with problems directly to enhance learning.
-                            </li>
-                            <li>
-                                <b>Commitment:</b> I know that the completeness of every task, wether it's an individual or a group one, will lead to success.
-                            </li>
-                            <li>
-                                <b>Teamwork:</b> Always willing to callaborate since I can learn from others and viceversa.
-                            </li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div id="timeline">
-            <div class="section-title">
-                <p>Timeline</p>
-            </div>
-            <div class="t-container">
-                <ul class="t-list">
-                    <li class="t-list-item">
-                        <p class="t-header">B.S. in Computer Science and Technology</p>
-                        <p class="t-subheader">Instituto Tecnológico y de Estudios Superiores de Monterrey</p>
-                        <p class="t-content"><b>GPA: </b>3.9/4&nbsp;&nbsp;|&nbsp;&nbsp;99/100.<br><br>
-                            <b>Relevant coursework: </b>OOP, Data Structures and Algorithms,
-                             Software Requirements, Multi-Agent Systems with Computer Graphics, Software Development, Implementation of Wide Area Networks and Distributed Services.
-                             <br><br><b>Key achievements: </b>
-                             <ul class="t-achievements">
-                                <li>Graduated with Highest Honors (Summa Cum Laude).</li>
-                                <li>Líderes del Mañana Scholarship: 100% scholarship for outstanding cognitive, social leadership 
-                                    and performance abilities. Chosen among over 15,000 applicants.</li>
-                                <li>Acknowledgement, 2021, 2023, 2024: Awarded for having academic excellence grades.</li>
-                             </ul>
-                        </p>
-                        <span class="t-date">Aug. 2020 - Jun. 2024</span>
-                        <span class="t-circle"></span>
-                    </li>
-                    <li class="t-list-item">
-                        <p class="t-header">Tutor</p>
-                        <p class="t-subheader">Proeducación I.A.P</p>
-                        <p class="t-content">Remote Math, Spanish and History tutoring for Mexican elementary school students from 
-                            different states of the country.
-                        </p>
-                        <span class="t-date">Jan. 2022 - Nov. 2022</span>
-                        <span class="t-circle"></span>
-                    </li>
-                    <li class="t-list-item">
-                        <p class="t-header">Back End Development Internship</p>
-                        <p class="t-subheader">Atos</p>
-                        <p class="t-content">Collaborated on the management, requirement analysis, design, implementation, 
-                            and optimization of a distributed Back End using C# and .NET, following the SOLID principles, Clean Architecture, Design Patterns, and Scrum.
-                            <br><br><b>Key achievements: </b>
-                            <ul class="t-achievements">
-                                <li>Created an abstraction layer to implement the Repository Pattern with NoSQL databases.</li>
-                                <li>Communicated microservices by adapting Amazon SNS/SQS to the project’s characteristics.</li>
-                                <li>Improved quality of microservices by reducing bugs, vulnerabilities, and code smells to 0.</li>
-                            </ul>
-                        </p>
-                        <span class="t-date">Aug. 2023 - Dec. 2023</span>
-                        <span class="t-circle"></span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="portfolio">
-            <div class="section-title">
-                <p>Projects</p>
-            </div>
-            <div class="p-container">
-                <div class="p-item"><img id="carpentry" src="img/thumbnails/carpentry.png" /></div>
-                <div class="p-item"><img id="inventa" src="img/thumbnails/inventa.png" /></div>
-                <div class="p-item"><img id="visianario" src="img/thumbnails/visianario.png" /></div>
-                <div class="p-item"><img id="bakesaleapp" src="img/thumbnails/bakesaleapp.png" /></div>
-                <div class="p-item"><img id="sumgame" src="img/thumbnails/sumgame.png" /></div>
-                <div class="p-item"><img id="arca" src="img/thumbnails/arca.png" /></div>
-                <div class="p-item"><img id="syntax-highlighter" src="img/thumbnails/syntax-highlighter.png"/></div>
-                <div class="p-item"><img id="lsm" src="img/thumbnails/lsm.png"/></div>
-                <div class="p-item"><img id="box-collector" src="img/thumbnails/box-collector.png" /></div>
-                <div class="p-item"><img id="loopedia" src="img/thumbnails/loopedia.jpg" /></div>
-            </div>
-            <div class="popup-item">
-                <span>&times;</span>
-                <div id ="carpentry-popup" class="p-content">
-                    <a href="https://github.com/JCarlosMtzZ/Carpentry-WebApp" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/github-white.png" class="p-icon" alt="">
-                    </a>
-                    <div class="view" data-scale="1.6">
-                        <img id="carpentry-view-item" class="view-item" src="img/projects/carpentry/1.png"/>
-                    </div>
-                    <div class="sidebar">
-                        <div class="sidebar-title">
-                            Carpintería Mtz
-                        </div>
-                        <div class="selectors">
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/1.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/2.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/3.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/4.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/5.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/6.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/7.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/8.png"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id ="inventa-popup" class="p-content">
-                    <a href="https://github.com/JCarlosMtzZ/InVenta-WebApp" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/github-white.png" class="p-icon" alt="">
-                    </a>
-                    <div class="view">
-                        <video id="inventa-view-item" class="view-item" src="vid/inventa1.mp4" muted autoplay controls></video>
-                    </div>
-                    <div class="sidebar">
-                        <div class="sidebar-title">
-                            InVenta
-                        </div>
-                        <div class="selectors">
-                            <div class="selector">
-                                <video onclick="launch(this)" class="selector-icon" src="vid/inventa1.mp4" muted></video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id ="visianario-popup" class="p-content">
-                    <a href="https://github.com/JCarlosMtzZ/YOLO_API" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/github-white.png" class="p-icon" alt="">
-                    </a>
-                    <div class="view">
-                        <video id="visianario-view-item" class="view-item" src="vid/visianario.mp4" muted autoplay controls></video>
-                    </div>
-                    <div class="sidebar">
-                        <div class="sidebar-title">
-                            VisIAnario
-                        </div>
-                        <div class="selectors">
-                            <div class="selector">
-                                <video onclick="launch(this)" class="selector-icon" src="vid/visianario.mp4" muted></video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id ="bakesaleapp-popup" class="p-content">
-                    <a href="https://github.com/JCarlosMtzZ/BakesaleApp" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/github-white.png" class="p-icon" alt="">
-                    </a>
-                    <div class="view">
-                        <video id="bakesaleapp-view-item" class="view-item" src="vid/bakesaleapp.mp4" muted autoplay controls></video>
-                    </div>
-                    <div class="sidebar">
-                        <div class="sidebar-title">
-                            BakesaleApp
-                        </div>
-                        <div class="selectors">
-                            <div class="selector">
-                                <video onclick="launch(this)" class="selector-icon" src="vid/bakesaleapp.mp4" muted></video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id ="sumgame-popup" class="p-content">
-                    <a href="https://github.com/JCarlosMtzZ/SumGame" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/github-white.png" class="p-icon" alt="">
-                    </a>
-                    <div class="view">
-                        <video id="sumgame-view-item" class="view-item" src="vid/sumgame.mp4" muted autoplay controls></video>
-                    </div>
-                    <div class="sidebar">
-                        <div class="sidebar-title">
-                            SumGame
-                        </div>
-                        <div class="selectors">
-                            <div class="selector">
-                                <video onclick="launch(this)" class="selector-icon" src="vid/sumgame.mp4" muted></video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id ="arca-popup" class="p-content">
-                    <a href="https://github.com/JCarlosMtzZ/TWISystem" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/github-white.png" class="p-icon" alt="">
-                    </a>
-                    <div class="view">
-                        <video id="arca-view-item" class="view-item" src="vid/arca/ARCA_Admin.mp4" muted autoplay controls></video>
-                    </div>
-                    <div class="sidebar">
-                        <div class="sidebar-title">
-                            TWI System
-                        </div>
-                        <div class="selectors">
-                            <div class="selector">
-                                <video onclick="launch(this)" class="selector-icon" src="vid/arca/ARCA_Admin.mp4" muted></video>
-                            </div>
-                            <div class="selector">
-                                <video onclick="launch(this)" class="selector-icon" src="vid/arca/ARCA_User.mp4" muted></video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id ="syntax-highlighter-popup" class="p-content">
-                    <a href="https://github.com/JCarlosMtzZ/Syntax-Highlighter" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/github-white.png" class="p-icon" alt="">
-                    </a>
-                    <div class="view" data-scale="1.6">
-                        <img id="syntax-highlighter-view-item" class="view-item" src="img/projects/syntax-highlighter/1.png"/>
-                    </div>
-                    <div class="sidebar">
-                        <div class="sidebar-title">
-                            Syntax Highlighter
-                        </div>
-                        <div class="selectors">
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/syntax-highlighter/1.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/syntax-highlighter/2.png"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id ="lsm-popup" class="p-content">
-                    <a href="https://github.com/JCarlosMtzZ/LSMSystem" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/github-white.png" class="p-icon" alt="">
-                    </a>
-                    <div class="view">
-                        <img id="lsm-view-item" class="view-item" src="img/projects/lsm/1.png"/>
-                    </div>
-                    <div class="sidebar">
-                        <div class="sidebar-title">
-                            LSM System
-                        </div>
-                        <div class="selectors">
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/1.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/2.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/3.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/4.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/5.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/6.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/7.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/8.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/9.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/10.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/11.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/12.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/13.png"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="box-collector-popup" class="p-content">
-                    <a href="https://github.com/JCarlosMtzZ/Box-Collector" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/github-white.png" class="p-icon" alt="">
-                    </a>
-                    <div class="view">
-                        <video id="box-collector-view-item" class="view-item" src="vid/box-collector/demo_trim.mp4" muted autoplay controls></video>
-                    </div>
-                    <div class="sidebar">
-                        <div class="sidebar-title">
-                            Box Collector
-                        </div>
-                    </div>
-                    
-                </div>
-                <div id ="loopedia-popup" class="p-content">
-                    <a href="https://github.com/JCarlosMtzZ/Loopedia" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/github-white.png" class="p-icon" alt="">
-                    </a>
-                    <div class="view">
-                        <img id="loopedia-view-item" class="view-item" src="img/projects/loopedia/1.jpg"/>
-                    </div>
-                    <div class="sidebar">
-                        <div class="sidebar-title">
-                            LoopEdia
-                        </div>
-                        <div class="selectors">
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/1.jpg"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/2.jpg"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/3.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/4.png"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/5.jpg"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/6.jpg"/>
-                            </div>
-                            <div class="selector">
-                                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/7.png"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="contact">
-            <div class="contact-info">
-                <div class="ci-title">
-                    <p>Let's get in touch</p>
-                </div>
-                <div class="ci-info">
-                    <div class="ci-info-item">
-                        <img src="img/icon/email.png" class="ci-icon-static" alt="">
-                        <p>juancmtz777@gmail.com</p>
-                    </div>
-                </div>
-                <div class="ci-media">
-                    <p>Connect with me:</p>
-                    <a href="https://www.linkedin.com/in/jcarlosmtzz/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/linkedin.png" class="ci-icon" alt="">
-                    </a>
-                    <a href="https://github.com/JCarlosMtzZ" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/github.png" class="ci-icon" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/carlos.mtz.0199/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/icon/instagram.png" class="ci-icon" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="contact-form">
-                <span class="circle one"></span>
-                <span class="circle two"></span>
-                <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
-                    <p class="form-title">Contact me</p>
-                    <input type="hidden" name="access_key" value="c21e93b8-7ae2-4e60-9899-c0dc2bb52d7c">
-                    <div class="input-container">
-                        <input type="text" name="name" class="input" placeholder="Name" required/>
-                      </div>
-                    <div class="input-container">
-                      <input type="email" name="email" class="input" placeholder="Email" required/>
-                    </div>
-                    <div class="input-container textarea">
-                      <textarea name="message" class="input" placeholder="Message" required></textarea>
-                    </div>
-                    <input type="submit" value="Send" class="form-btn" />
-                </form>
-            </div>
-        </div>
-
-        <div id="footer">
-            <p>Copyright &copy Juan Carlos Martínez</p>
-            <div id="scroll-up"></div>
-        </div>
+            <span class="t-date">Aug. 2020 - Jun. 2024</span>
+            <span class="t-circle"></span>
+          </li>
+          <li class="t-list-item">
+            <p class="t-header">Tutor</p>
+            <p class="t-subheader">Proeducación I.A.P</p>
+            <p class="t-content">Remote Math, Spanish and History tutoring for Mexican elementary school students from
+              different states of the country.
+            </p>
+            <span class="t-date">Jan. 2022 - Nov. 2022</span>
+            <span class="t-circle"></span>
+          </li>
+          <li class="t-list-item">
+            <p class="t-header">Back End Development Internship</p>
+            <p class="t-subheader">Atos</p>
+            <p class="t-content">Collaborated on the management, requirement analysis, design, implementation,
+              and optimization of a distributed Back End using C# and .NET, following the SOLID principles, Clean
+              Architecture, Design Patterns, and Scrum.
+              <br><br><b>Key achievements: </b>
+            <ul class="t-achievements">
+              <li>Created an abstraction layer to implement the Repository Pattern with NoSQL databases.</li>
+              <li>Communicated microservices by adapting Amazon SNS/SQS to the project’s characteristics.</li>
+              <li>Improved quality of microservices by reducing bugs, vulnerabilities, and code smells to 0.</li>
+            </ul>
+            </p>
+            <span class="t-date">Aug. 2023 - Dec. 2023</span>
+            <span class="t-circle"></span>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <script src="js/subTitleAnimation.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/gallery.js"></script>
-    <script src="js/loadingAnimation.js"></script>
+    <div id="portfolio">
+      <div class="section-title">
+        <p>Projects</p>
+      </div>
+      <div class="p-container">
+        <div class="p-item"><img id="carauctions" src="img/thumbnails/carauctions.png" /></div>
+        <div class="p-item"><img id="carpentry" src="img/thumbnails/carpentry.png" /></div>
+        <div class="p-item"><img id="inventa" src="img/thumbnails/inventa.png" /></div>
+        <div class="p-item"><img id="visianario" src="img/thumbnails/visianario.png" /></div>
+        <div class="p-item"><img id="bakesaleapp" src="img/thumbnails/bakesaleapp.png" /></div>
+        <div class="p-item"><img id="sumgame" src="img/thumbnails/sumgame.png" /></div>
+        <div class="p-item"><img id="arca" src="img/thumbnails/arca.png" /></div>
+        <div class="p-item"><img id="syntax-highlighter" src="img/thumbnails/syntax-highlighter.png" /></div>
+        <div class="p-item"><img id="lsm" src="img/thumbnails/lsm.png" /></div>
+        <div class="p-item"><img id="box-collector" src="img/thumbnails/box-collector.png" /></div>
+        <div class="p-item"><img id="loopedia" src="img/thumbnails/loopedia.jpg" /></div>
+      </div>
+      <div class="popup-item">
+        <span>&times;</span>
+        <div id="carauctions-popup" class="p-content">
+          <div class="tech-stack">
+            <div class="tech-item">Next.js</div>
+            <div class="tech-item">Zustand</div>
+            <div class="tech-item">.NET</div>
+            <div class="tech-item">PostgreSQL</div>
+            <div class="tech-item">MongoDB</div>
+            <div class="tech-item">RabbitMQ</div>
+            <div class="tech-item">Docker</div>
+            <div class="tech-item">Kubernetes</div>
+            <div class="tech-item">xUnit</div>
+          </div>
+          <a href="https://github.com/JCarlosMtzZ/CarAuctions" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github-white.png" class="p-icon" alt="">
+          </a>
+          <div class="view">
+            <video id="carauctions-view-item" class="view-item" src="vid/carauctions.mp4" muted autoplay controls></video>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-title">
+              Car Auctions App
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <video onclick="launch(this)" class="selector-icon" src="vid/carauctions.mp4" muted></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="carpentry-popup" class="p-content">
+          <div class="tech-stack">
+            <div class="tech-item">Next.js</div>
+            <div class="tech-item">Material UI</div>
+            <div class="tech-item">Tailwind CSS</div>
+            <div class="tech-item">NextAuth.js</div>
+            <div class="tech-item">PostgreSQL</div>
+            <div class="tech-item">Oracle Cloud</div>
+          </div>
+          <a href="https://github.com/JCarlosMtzZ/Carpentry-WebApp" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github-white.png" class="p-icon" alt="">
+          </a>
+          <div class="view" data-scale="1.6">
+            <img id="carpentry-view-item" class="view-item" src="img/projects/carpentry/1.png" />
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-title">
+              Carpintería Mtz
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/1.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/2.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/3.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/4.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/5.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/6.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/7.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/carpentry/8.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="inventa-popup" class="p-content">
+          <div class="tech-stack">
+            <div class="tech-item">React</div>
+            <div class="tech-item">Tailwind CSS</div>
+            <div class="tech-item">Recharts</div>
+            <div class="tech-item">Node.js</div>
+            <div class="tech-item">Sequelize</div>
+            <div class="tech-item">PostgreSQL</div>
+            <div class="tech-item">Oracle Cloud</div>
+          </div>
+          <a href="https://github.com/JCarlosMtzZ/InVenta-WebApp" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github-white.png" class="p-icon" alt="">
+          </a>
+          <div class="view">
+            <video id="inventa-view-item" class="view-item" src="vid/inventa1.mp4" muted autoplay controls></video>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-title">
+              InVenta
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <video onclick="launch(this)" class="selector-icon" src="vid/inventa1.mp4" muted></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="visianario-popup" class="p-content">
+          <div class="tech-stack">
+            <div class="tech-item">Python</div>
+            <div class="tech-item">FastAPI</div>
+            <div class="tech-item">PostgreSQL</div>
+          </div>
+          <a href="https://github.com/JCarlosMtzZ/YOLO_API" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github-white.png" class="p-icon" alt="">
+          </a>
+          <div class="view">
+            <video id="visianario-view-item" class="view-item" src="vid/visianario.mp4" muted autoplay controls></video>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-title">
+              VisIAnario
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <video onclick="launch(this)" class="selector-icon" src="vid/visianario.mp4" muted></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bakesaleapp-popup" class="p-content">
+          <div class="tech-stack">
+            <div class="tech-item">React Native</div>
+          </div>
+          <a href="https://github.com/JCarlosMtzZ/BakesaleApp" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github-white.png" class="p-icon" alt="">
+          </a>
+          <div class="view">
+            <video id="bakesaleapp-view-item" class="view-item" src="vid/bakesaleapp.mp4" muted autoplay
+              controls></video>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-title">
+              BakesaleApp
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <video onclick="launch(this)" class="selector-icon" src="vid/bakesaleapp.mp4" muted></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="sumgame-popup" class="p-content">
+          <div class="tech-stack">
+            <div class="tech-item">React Native</div>
+          </div>
+          <a href="https://github.com/JCarlosMtzZ/SumGame" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github-white.png" class="p-icon" alt="">
+          </a>
+          <div class="view">
+            <video id="sumgame-view-item" class="view-item" src="vid/sumgame.mp4" muted autoplay controls></video>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-title">
+              SumGame
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <video onclick="launch(this)" class="selector-icon" src="vid/sumgame.mp4" muted></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="arca-popup" class="p-content">
+          <div class="tech-stack">
+            <div class="tech-item">React</div>
+            <div class="tech-item">Bootstrap</div>
+            <div class="tech-item">Node.js</div>
+            <div class="tech-item">MySQL</div>
+          </div>
+          <a href="https://github.com/JCarlosMtzZ/TWISystem" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github-white.png" class="p-icon" alt="">
+          </a>
+          <div class="view">
+            <video id="arca-view-item" class="view-item" src="vid/arca/ARCA_Admin.mp4" muted autoplay controls></video>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-title">
+              TWI System
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <video onclick="launch(this)" class="selector-icon" src="vid/arca/ARCA_Admin.mp4" muted></video>
+              </div>
+              <div class="selector">
+                <video onclick="launch(this)" class="selector-icon" src="vid/arca/ARCA_User.mp4" muted></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="syntax-highlighter-popup" class="p-content">
+          <div class="tech-stack">
+            <div class="tech-item">Go</div>
+          </div>
+          <a href="https://github.com/JCarlosMtzZ/Syntax-Highlighter" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github-white.png" class="p-icon" alt="">
+          </a>
+          <div class="view" data-scale="1.6">
+            <img id="syntax-highlighter-view-item" class="view-item" src="img/projects/syntax-highlighter/1.png" />
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-title">
+              Syntax Highlighter
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/syntax-highlighter/1.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/syntax-highlighter/2.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="lsm-popup" class="p-content">
+          <div class="tech-stack">
+            <div class="tech-item">Android Studio</div>
+            <div class="tech-item">Kotlin</div>
+            <div class="tech-item">React</div>
+            <div class="tech-item">Node.js</div>
+            <div class="tech-item">MySQL</div>
+          </div>
+          <a href="https://github.com/JCarlosMtzZ/LSMSystem" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github-white.png" class="p-icon" alt="">
+          </a>
+          <div class="view">
+            <img id="lsm-view-item" class="view-item" src="img/projects/lsm/1.png" />
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-title">
+              LSM System
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/1.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/2.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/3.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/4.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/5.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/6.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/7.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/8.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/9.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/10.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/11.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/12.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/lsm/13.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="box-collector-popup" class="p-content">
+          <div class="tech-stack">
+            <div class="tech-item">Python</div>
+            <div class="tech-item">MESA</div>
+          </div>
+          <a href="https://github.com/JCarlosMtzZ/Box-Collector" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github-white.png" class="p-icon" alt="">
+          </a>
+          <div class="view">
+            <video id="box-collector-view-item" class="view-item" src="vid/box-collector/demo_trim.mp4" muted autoplay
+              controls></video>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-title">
+              Box Collector
+            </div>
+          </div>
+        </div>
+        <div id="loopedia-popup" class="p-content">
+          <div class="tech-stack">
+            <div class="tech-item">React</div>
+            <div class="tech-item">Firebase</div>
+          </div>
+          <a href="https://github.com/JCarlosMtzZ/Loopedia" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github-white.png" class="p-icon" alt="">
+          </a>
+          <div class="view">
+            <img id="loopedia-view-item" class="view-item" src="img/projects/loopedia/1.jpg" />
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-title">
+              LoopEdia
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/1.jpg" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/2.jpg" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/3.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/4.png" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/5.jpg" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/6.jpg" />
+              </div>
+              <div class="selector">
+                <img onclick="launch(this)" class="selector-icon" src="img/projects/loopedia/7.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="contact-info">
+        <div class="ci-title">
+          <p>Let's get in touch</p>
+        </div>
+        <div class="ci-info">
+          <div class="ci-info-item">
+            <img src="img/icon/email.png" class="ci-icon-static" alt="">
+            <p>juancmtz777@gmail.com</p>
+          </div>
+        </div>
+        <div class="ci-media">
+          <p>Connect with me:</p>
+          <a href="https://www.linkedin.com/in/jcarlosmtzz/" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/linkedin.png" class="ci-icon" alt="">
+          </a>
+          <a href="https://github.com/JCarlosMtzZ" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/github.png" class="ci-icon" alt="">
+          </a>
+          <a href="https://www.instagram.com/carlos.mtz.0199/" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/instagram.png" class="ci-icon" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+        <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
+          <p class="form-title">Contact me</p>
+          <input type="hidden" name="access_key" value="c21e93b8-7ae2-4e60-9899-c0dc2bb52d7c">
+          <div class="input-container">
+            <input type="text" name="name" class="input" placeholder="Name" required />
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" placeholder="Email" required />
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input" placeholder="Message" required></textarea>
+          </div>
+          <input type="submit" value="Send" class="form-btn" />
+        </form>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Copyright &copy Juan Carlos Martínez</p>
+      <div id="scroll-up"></div>
+    </div>
+  </div>
+
+  <script src="js/subTitleAnimation.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/loadingAnimation.js"></script>
 </body>
+
 </html>

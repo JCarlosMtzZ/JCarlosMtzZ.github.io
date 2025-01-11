@@ -8,5 +8,5 @@ window.addEventListener('load', () => {
             body.style.overflow = 'auto';
             body.removeChild(loader);
         })
-    }, 2000);
+    }, 100);
 });
